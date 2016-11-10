@@ -38,6 +38,10 @@
       <HintPath>..\..\packages\JetBrainsAnnotations.Fody.1.0.4.0\Lib\JetBrains.Annotations.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.9.0.1\lib\net40\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="Microsoft.CSharp" />
@@ -64,6 +68,23 @@
     <Compile Include="Attributes\SwaggerPropertyAttribute.cs" />
     <Compile Include="DataType.cs" />
     <Compile Include="Items.cs" />
+    <Compile Include="Model2\AdditionalProperties.cs" />
+    <Compile Include="Model2\Contact.cs" />
+    <Compile Include="Model2\ExternalDocumentation.cs" />
+    <Compile Include="Model2\Header.cs" />
+    <Compile Include="Model2\Info.cs" />
+    <Compile Include="Model2\License.cs" />
+    <Compile Include="Model2\Operation.cs" />
+    <Compile Include="Model2\Parameter.cs" />
+    <Compile Include="Model2\ParameterOrReference.cs" />
+    <Compile Include="Model2\PathItem.cs" />
+    <Compile Include="Model2\Response.cs" />
+    <Compile Include="Model2\Schema.cs" />
+    <Compile Include="Model2\SchemaOrListOfSchemas.cs" />
+    <Compile Include="Model2\SecurityScheme.cs" />
+    <Compile Include="Model2\Swagger.cs" />
+    <Compile Include="Model2\Tag.cs" />
+    <Compile Include="Model2\Xml.cs" />
     <Compile Include="Primitive.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReflectionExtensions.cs" />

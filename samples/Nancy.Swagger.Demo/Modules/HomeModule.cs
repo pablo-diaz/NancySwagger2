@@ -9,8 +9,14 @@ namespace Nancy.Swagger.Demo.Modules
         {
             Get["Home", "/"] = _ => "Hello Swagger!";
 
+            Get["Prueba01", "/prueba/{nombre:string}"] = x => "Hola " + x.nombre;
+
+            Get["/prueba/ping"] =
+            Get["Prueba02", "/prueba/todo"] = _ => "Esto es todo lo que hay";
+
             Get["GetUsers", "/users"] = _ => new[] { new User { Name = "Vincent Vega", Age = 45 } };
 
+            Post["/create/user"] =
             Post["PostUsers", "/users"] = _ =>
             {
                 var result = this.BindAndValidate<User>();
